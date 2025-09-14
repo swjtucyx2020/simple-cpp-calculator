@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"E:/github/simple-cpp-calculator/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

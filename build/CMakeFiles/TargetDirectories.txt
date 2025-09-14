@@ -1,0 +1,5 @@
+E:/github/simple-cpp-calculator/build/CMakeFiles/calculator.dir
+E:/github/simple-cpp-calculator/build/CMakeFiles/test_calculator.dir
+E:/github/simple-cpp-calculator/build/CMakeFiles/RUN_TESTS.dir
+E:/github/simple-cpp-calculator/build/CMakeFiles/ALL_BUILD.dir
+E:/github/simple-cpp-calculator/build/CMakeFiles/ZERO_CHECK.dir

@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DD8DC707-3BAB-3391-997A-D7D3A0148D37}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\github\simple-cpp-calculator\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/github/simple-cpp-calculator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+E:\Cmake\Cmake_install\bin\cmake.exe -SE:/github/simple-cpp-calculator -BE:/github/simple-cpp-calculator/build --check-stamp-file E:/github/simple-cpp-calculator/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\ProgramData\miniconda3\Library\lib\cmake\GTest\GTestConfig.cmake;C:\ProgramData\miniconda3\Library\lib\cmake\GTest\GTestConfigVersion.cmake;C:\ProgramData\miniconda3\Library\lib\cmake\GTest\GTestTargets-release.cmake;C:\ProgramData\miniconda3\Library\lib\cmake\GTest\GTestTargets.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeCInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeFindDependencyMacro.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeRCInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Compiler\MSVC.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\FindGTest.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\FindPackageMessage.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\GoogleTest.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Linker\MSVC.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Windows.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;E:\github\simple-cpp-calculator\build\CMakeFiles\4.0.2\CMakeCCompiler.cmake;E:\github\simple-cpp-calculator\build\CMakeFiles\4.0.2\CMakeCXXCompiler.cmake;E:\github\simple-cpp-calculator\build\CMakeFiles\4.0.2\CMakeRCCompiler.cmake;E:\github\simple-cpp-calculator\build\CMakeFiles\4.0.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\github\simple-cpp-calculator\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/github/simple-cpp-calculator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+E:\Cmake\Cmake_install\bin\cmake.exe -SE:/github/simple-cpp-calculator -BE:/github/simple-cpp-calculator/build --check-stamp-file E:/github/simple-cpp-calculator/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\ProgramData\miniconda3\Library\lib\cmake\GTest\GTestConfig.cmake;C:\ProgramData\miniconda3\Library\lib\cmake\GTest\GTestConfigVersion.cmake;C:\ProgramData\miniconda3\Library\lib\cmake\GTest\GTestTargets-release.cmake;C:\ProgramData\miniconda3\Library\lib\cmake\GTest\GTestTargets.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeCInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeFindDependencyMacro.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeRCInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Compiler\MSVC.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\FindGTest.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\FindPackageMessage.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\GoogleTest.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Linker\MSVC.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Windows.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;E:\github\simple-cpp-calculator\build\CMakeFiles\4.0.2\CMakeCCompiler.cmake;E:\github\simple-cpp-calculator\build\CMakeFiles\4.0.2\CMakeCXXCompiler.cmake;E:\github\simple-cpp-calculator\build\CMakeFiles\4.0.2\CMakeRCCompiler.cmake;E:\github\simple-cpp-calculator\build\CMakeFiles\4.0.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\github\simple-cpp-calculator\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/github/simple-cpp-calculator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+E:\Cmake\Cmake_install\bin\cmake.exe -SE:/github/simple-cpp-calculator -BE:/github/simple-cpp-calculator/build --check-stamp-file E:/github/simple-cpp-calculator/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\ProgramData\miniconda3\Library\lib\cmake\GTest\GTestConfig.cmake;C:\ProgramData\miniconda3\Library\lib\cmake\GTest\GTestConfigVersion.cmake;C:\ProgramData\miniconda3\Library\lib\cmake\GTest\GTestTargets-release.cmake;C:\ProgramData\miniconda3\Library\lib\cmake\GTest\GTestTargets.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeCInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeFindDependencyMacro.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeRCInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Compiler\MSVC.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\FindGTest.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\FindPackageMessage.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\GoogleTest.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Linker\MSVC.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Windows.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;E:\github\simple-cpp-calculator\build\CMakeFiles\4.0.2\CMakeCCompiler.cmake;E:\github\simple-cpp-calculator\build\CMakeFiles\4.0.2\CMakeCXXCompiler.cmake;E:\github\simple-cpp-calculator\build\CMakeFiles\4.0.2\CMakeRCCompiler.cmake;E:\github\simple-cpp-calculator\build\CMakeFiles\4.0.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\github\simple-cpp-calculator\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/github/simple-cpp-calculator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+E:\Cmake\Cmake_install\bin\cmake.exe -SE:/github/simple-cpp-calculator -BE:/github/simple-cpp-calculator/build --check-stamp-file E:/github/simple-cpp-calculator/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\ProgramData\miniconda3\Library\lib\cmake\GTest\GTestConfig.cmake;C:\ProgramData\miniconda3\Library\lib\cmake\GTest\GTestConfigVersion.cmake;C:\ProgramData\miniconda3\Library\lib\cmake\GTest\GTestTargets-release.cmake;C:\ProgramData\miniconda3\Library\lib\cmake\GTest\GTestTargets.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeCInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeFindDependencyMacro.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeRCInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Compiler\MSVC.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\FindGTest.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\FindPackageMessage.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\GoogleTest.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Linker\MSVC.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\Windows.cmake;E:\Cmake\Cmake_install\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;E:\github\simple-cpp-calculator\build\CMakeFiles\4.0.2\CMakeCCompiler.cmake;E:\github\simple-cpp-calculator\build\CMakeFiles\4.0.2\CMakeCXXCompiler.cmake;E:\github\simple-cpp-calculator\build\CMakeFiles\4.0.2\CMakeRCCompiler.cmake;E:\github\simple-cpp-calculator\build\CMakeFiles\4.0.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\github\simple-cpp-calculator\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="E:\github\simple-cpp-calculator\build\ZERO_CHECK.vcxproj">
+      <Project>{C0188956-2BBA-3CC4-BBBD-41BEA7574675}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\simple-cpp-calculator\build\calculator.vcxproj">
+      <Project>{633E12F9-3D99-3A64-9936-EB302CFDB2BF}</Project>
+      <Name>calculator</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\simple-cpp-calculator\build\test_calculator.vcxproj">
+      <Project>{028D6AF0-3EE5-3BB9-9E02-072E5315DEED}</Project>
+      <Name>test_calculator</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
